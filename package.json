@@ -6,6 +6,9 @@
   "workspaces": [
     "renderer"
   ],
+  "dependencies": {
+    "@tauri-apps/cli": "2.9.6"
+  },
   "devDependencies": {
     "@atls/code-runtime": "2.1.16",
     "@nx-tools/container-metadata": "6.8.2",
