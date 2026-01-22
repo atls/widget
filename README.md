@@ -1,2 +1,1 @@
-# widget
-Desktop Reminder Widget
+# template

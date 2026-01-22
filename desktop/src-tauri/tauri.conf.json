@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Widget",
+  "version": "0.1.0",
+  "identifier": "com.tauri.dev",
+  "build": {
+    "frontendDist": "../renderer",
+    "devUrl": "http://localhost:3000",
+    "beforeDevCommand": "cd renderer && yarn dev",
+    "beforeBuildCommand": "cd renderer && yarn build"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Widget",
+        "width": 400,
+        "height": 300,
+        "resizable": false,
+        "fullscreen": false,
+        "skipTaskbar": true,
+        "decorations": false,
+        "center": true,
+        "minimizable": false,
+        "maximizable": false,
+        "alwaysOnTop": true,
+        "visible": false,
+        "hiddenTitle": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": ["icons/tray.png"]
+  }
+}
