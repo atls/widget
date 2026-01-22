@@ -3,6 +3,9 @@
   "private": true,
   "license": "BSD 3-Clause",
   "type": "module",
+  "workspaces": [
+    "renderer"
+  ],
   "devDependencies": {
     "@atls/code-runtime": "2.1.16",
     "@nx-tools/container-metadata": "6.8.2",
