@@ -25,8 +25,7 @@
         "maximizable": false,
         "alwaysOnTop": true,
         "visible": false,
-        "hiddenTitle": true,
-        "titleBarStyle": "overlay"
+        "hiddenTitle": true
       }
     ],
     "security": {
@@ -36,6 +35,6 @@
   "bundle": {
     "active": true,
     "targets": "all",
-    "icon": ["icons/icon.png", "icons/icon.icns"]
+    "icon": ["icons/tray.png"]
   }
 }
