@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "identifier": "com.tauri.dev",
   "build": {
-    "frontendDist": "../renderer",
+    "frontendDist": "../frontend",
     "devUrl": "http://localhost:3000",
-    "beforeDevCommand": "cd renderer && yarn dev",
-    "beforeBuildCommand": "cd renderer && yarn build"
+    "beforeDevCommand": "cd ../frontend && yarn dev",
+    "beforeBuildCommand": "cd ../frontend && yarn build"
   },
   "app": {
     "windows": [

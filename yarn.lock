@@ -7081,9 +7081,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"renderer@workspace:renderer":
+"renderer@workspace:frontend":
   version: 0.0.0-use.local
-  resolution: "renderer@workspace:renderer"
+  resolution: "renderer@workspace:frontend"
   dependencies:
     "@types/node": "npm:22.10.10"
     "@types/react": "npm:19.0.8"
