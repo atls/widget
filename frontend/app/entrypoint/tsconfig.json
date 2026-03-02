@@ -1,0 +1,21 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "../../../",
+    "paths": {
+      "@/*": ["frontend/*"]
+    },
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "allowJs": true,
+    "noEmit": true,
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": ["../../../**/*"],
+  "exclude": ["node_modules"]
+}

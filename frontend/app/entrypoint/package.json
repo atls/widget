@@ -1,10 +1,11 @@
 {
-  "name": "frontend",
+  "name": "@frontend/app-entrypoint",
   "version": "0.1.0",
-  "private": true,
+  "license": "BSD-3-Clause",
+  "type": "module",
   "scripts": {
     "build": "NODE_OPTIONS='--no-deprecation' next build",
-    "dev": "next dev",
+    "dev": "next dev --port 3000",
     "lint": "next lint",
     "start": "next start"
   },
@@ -18,5 +19,9 @@
     "@types/react": "19.0.8",
     "@types/react-dom": "19.0.3",
     "typescript": "5.7.3"
+  },
+  "nx": {
+    "sourceRoot": "frontend/app/entrypoint/src",
+    "projectType": "application"
   }
 }

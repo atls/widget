@@ -1504,6 +1504,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@frontend/app-entrypoint@workspace:frontend/app/entrypoint":
+  version: 0.0.0-use.local
+  resolution: "@frontend/app-entrypoint@workspace:frontend/app/entrypoint"
+  dependencies:
+    "@types/node": "npm:22.10.10"
+    "@types/react": "npm:19.0.8"
+    "@types/react-dom": "npm:19.0.3"
+    next: "npm:16.0.1"
+    react: "npm:19.0.0"
+    react-dom: "npm:19.0.0"
+    typescript: "npm:5.7.3"
+  languageName: unknown
+  linkType: soft
+
+"@frontend/pages@workspace:frontend/pages":
+  version: 0.0.0-use.local
+  resolution: "@frontend/pages@workspace:frontend/pages"
+  languageName: unknown
+  linkType: soft
+
 "@hono/node-server@npm:^1.19.9":
   version: 1.19.9
   resolution: "@hono/node-server@npm:1.19.9"
@@ -5151,20 +5171,6 @@ __metadata:
   checksum: 10/8897a831a82c5d35413b02b806ed421e793068ad8bf75e864163ec07b7f0cfd87e2fcce0893e8ceccc8f6c63a46e953a6c01208e573627626867a8b86cf6abb9
   languageName: node
   linkType: hard
-
-"frontend@workspace:frontend":
-  version: 0.0.0-use.local
-  resolution: "frontend@workspace:frontend"
-  dependencies:
-    "@types/node": "npm:22.10.10"
-    "@types/react": "npm:19.0.8"
-    "@types/react-dom": "npm:19.0.3"
-    next: "npm:16.0.1"
-    react: "npm:19.0.0"
-    react-dom: "npm:19.0.0"
-    typescript: "npm:5.7.3"
-  languageName: unknown
-  linkType: soft
 
 "fs-constants@npm:^1.0.0":
   version: 1.0.0
