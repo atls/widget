@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: workspaceRoot,
   },
+  output: 'standalone',
   experimental: {
     externalDir: true,
   },

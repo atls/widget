@@ -3,11 +3,16 @@
   "version": "0.1.0",
   "license": "BSD-3-Clause",
   "type": "module",
+  "main": "dist/server.js",
   "scripts": {
-    "build": "NODE_OPTIONS='--no-deprecation' next build",
+    "build": "next build ; cp -r ./.next/standalone/dashboard/app/entrypoint ./dist && cp -r ./.next/static ./dist/.next/static && rm -f ./dist/package.json",
     "dev": "next dev --port 3000",
-    "lint": "next lint",
-    "start": "next start"
+    "prepack": "yarn run build",
+    "publish:local": "yarn image pack",
+    "publish:production": "yarn image pack --publish --tag-policy $TAG_POLICY --registry ghcr.io/revertix/",
+    "start": "yarn && node dist/server.js",
+    "start:image": "yarn && node dist/server.js",
+    "start:local": "node dist/server.js"
   },
   "dependencies": {
     "next": "16.0.1",
