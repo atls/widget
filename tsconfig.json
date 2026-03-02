@@ -27,6 +27,6 @@
     "outDir": "./dist",
     "skipLibCheck": true
   },
-  "include": ["project.types.d.ts"],
+  "include": ["project.types.d.ts", "frontend/**/*"],
   "exclude": [".idea"]
 }
