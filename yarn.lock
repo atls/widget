@@ -5121,6 +5121,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"frontend@workspace:frontend":
+  version: 0.0.0-use.local
+  resolution: "frontend@workspace:frontend"
+  dependencies:
+    "@types/node": "npm:22.10.10"
+    "@types/react": "npm:19.0.8"
+    "@types/react-dom": "npm:19.0.3"
+    next: "npm:15.1.6"
+    react: "npm:19.0.0"
+    react-dom: "npm:19.0.0"
+    typescript: "npm:5.7.3"
+  languageName: unknown
+  linkType: soft
+
 "fs-constants@npm:^1.0.0":
   version: 1.0.0
   resolution: "fs-constants@npm:1.0.0"
@@ -7080,20 +7094,6 @@ __metadata:
   checksum: 10/eeaabd3454f59394cbb3bfeb15fd789e638040f37d0bee9071a9b0b85524ddc52b5f7aaaaa4847304c36fa37429e53d109c4dbf6b878cb5ffa4f4198c1042fb7
   languageName: node
   linkType: hard
-
-"renderer@workspace:frontend":
-  version: 0.0.0-use.local
-  resolution: "renderer@workspace:frontend"
-  dependencies:
-    "@types/node": "npm:22.10.10"
-    "@types/react": "npm:19.0.8"
-    "@types/react-dom": "npm:19.0.3"
-    next: "npm:15.1.6"
-    react: "npm:19.0.0"
-    react-dom: "npm:19.0.0"
-    typescript: "npm:5.7.3"
-  languageName: unknown
-  linkType: soft
 
 "require-directory@npm:^2.1.1":
   version: 2.1.1
