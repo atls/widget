@@ -5,7 +5,7 @@
   "type": "module",
   "main": "dist/server.js",
   "scripts": {
-    "build": "next build ; cp -r ./.next/standalone/dashboard/app/entrypoint ./dist && cp -r ./.next/static ./dist/.next/static && rm -f ./dist/package.json",
+    "build": "next build ; cp -r ./.next/standalone/frontend/app/entrypoint ./dist && cp -r ./.next/static ./dist/.next/static && rm -f ./dist/package.json",
     "dev": "next dev --port 3000",
     "prepack": "yarn run build",
     "publish:local": "yarn image pack",
