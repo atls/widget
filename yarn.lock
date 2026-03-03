@@ -1518,9 +1518,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@frontend/pages@workspace:frontend/pages":
+"@frontend/home-page@workspace:frontend/pages/home":
   version: 0.0.0-use.local
-  resolution: "@frontend/pages@workspace:frontend/pages"
+  resolution: "@frontend/home-page@workspace:frontend/pages/home"
   languageName: unknown
   linkType: soft
 
