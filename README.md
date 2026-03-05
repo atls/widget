@@ -1,2 +1,10 @@
-# widget
-Desktop Reminder Widget
+# Widget
+
+Десктоп-виджет для работы с GitHub-уведомлениями.
+
+- Аутентификация через GitHub
+- Уведомления по задачам и PR
+- Упоминания
+- Напоминания по DSM и check-in’ам
+
+macOS · Rust · Tauri

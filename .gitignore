@@ -1,0 +1,122 @@
+# IDE & Editor Files
+.idea
+.vscode
+.zed
+.vim
+*.iml
+
+# JetBrains specific
+!.idea/fileTemplates
+!.idea/file.template.settings.xml
+
+# VSCode versions for testing extensions
+.vscode-test
+
+# Cursor rules and instructions
+.cursor/rules/nx-rules.mdc
+
+# Operating System Files
+.DS_Store
+.DS_*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime Data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Optional REPL history
+.node_repl_history
+
+# Dependencies
+node_modules/
+jspm_packages/
+bower_components
+web_modules/
+.yarn/*
+!.yarn/releases
+!.yarn/patches
+!.yarn/plugins
+!.yarn/versions
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.yarn-cache
+.yarn-integrity
+.pnp.*
+.npm
+
+# ESLint
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.cache
+.parcel-cache
+.fusebox/
+.tern-port
+.nx/cache
+.nx/workspace-data
+
+# Testing & Coverage
+coverage
+*.lcov
+.nyc_output
+lib-cov
+
+# Build Output
+dist/
+out
+build/Release
+.astro
+.next
+.nuxt
+.vuepress/dist
+.temp
+**/.vitepress/dist
+**/.vitepress/cache
+.docusaurus
+
+# Serverless & Cloud
+.serverless/
+.wrangler/
+.dev.vars
+
+# DynamoDB Local
+.dynamodb/
+
+# Environment Variables
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Package Outputs
+*.tgz
+
+# Build Configuration
+.lock-wscript
+
+# Backup / design / misc
+**/*.backup.*
+**/*.back.*
+*.sublime*
+psd
+thumb
+sketch

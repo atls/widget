@@ -1,0 +1,32 @@
+{
+  "name": "@frontend/app-entrypoint",
+  "version": "0.1.0",
+  "license": "BSD-3-Clause",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "next build && cp -r ./.next/standalone/frontend/app/entrypoint ./dist && cp -r ./.next/static ./dist/.next/static && rm -f ./dist/package.json",
+    "dev": "next dev --port 3000",
+    "prepack": "yarn run build",
+    "publish:local": "yarn image pack",
+    "publish:production": "yarn image pack --publish --tag-policy $TAG_POLICY --registry ghcr.io/revertix/",
+    "start": "yarn && node dist/server.js",
+    "start:image": "yarn && node dist/server.js",
+    "start:local": "node dist/server.js"
+  },
+  "dependencies": {
+    "next": "16.1.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.10",
+    "@types/react": "19.0.8",
+    "@types/react-dom": "19.0.3",
+    "typescript": "5.7.3"
+  },
+  "nx": {
+    "sourceRoot": "frontend/app/entrypoint/src",
+    "projectType": "application"
+  }
+}

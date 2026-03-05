@@ -1,0 +1,9 @@
+# Cargo build artifacts
+/target/
+/gen/
+
+
+debug/
+
+# Rust backup files
+**/*.rs.bk
