@@ -4,7 +4,9 @@
   "license": "BSD 3-Clause",
   "type": "module",
   "workspaces": [
-    "frontend/**/*"
+    "frontend/ui/*",
+    "frontend/app/*",
+    "frontend/pages/*"
   ],
   "devDependencies": {
     "@atls/code-runtime": "2.1.16",
