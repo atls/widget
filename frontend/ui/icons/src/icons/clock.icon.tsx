@@ -1,0 +1,45 @@
+import type { ReactNode } from 'react'
+
+import type { IconProps } from '../icons.interfaces.js'
+
+import { clsx }           from 'clsx'
+
+import { iconSprinkles }  from '../icon.css.js'
+
+export const ClockIcon = (props: IconProps): ReactNode => {
+  const { className, style, otherProps } = iconSprinkles(props)
+  const iconStyle = {
+    ...style,
+    ...otherProps.style,
+  }
+  return (
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      width='1em'
+      height='1em'
+      fill='none'
+      viewBox='0 0 32 32'
+      className={clsx(className, String(otherProps.className || ''))}
+      style={iconStyle}
+      {...otherProps}
+    >
+      <path
+        fill='currentColor'
+        fillOpacity={0.7}
+        d='M16 7a1 1 0 0 1 1 1v7.586l3.707 3.707.069.076a1 1 0 0 1-1.407 1.407l-.076-.069-4-4A1 1 0 0 1 15 16V8a1 1 0 0 1 1-1'
+      />
+      <path
+        fill='currentColor'
+        fillOpacity={0.7}
+        fillRule='evenodd'
+        d='M16 2c7.732 0 14 6.268 14 14s-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2m0 2C9.373 4 4 9.373 4 16c0 6.628 5.373 12 12 12 6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12'
+        clipRule='evenodd'
+      />
+      <path
+        fill='currentColor'
+        fillOpacity={0.7}
+        d='M5.37 1.225A1 1 0 0 1 6.775 2.63l-.069.076-4 4-.076.069a1 1 0 0 1-1.406-1.407l.068-.076 4-4zM25.293 1.293a1 1 0 0 1 1.338-.068l.076.068 4 4 .069.076a1 1 0 0 1-1.407 1.407l-.076-.069-4-4-.068-.076a1 1 0 0 1 .068-1.338'
+      />
+    </svg>
+  )
+}
