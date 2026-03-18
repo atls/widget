@@ -8,6 +8,14 @@
     "frontend/app/*",
     "frontend/pages/*"
   ],
+  "resolutions": {
+    "@vanilla-extract/compiler": "https://pkg.pr.new/RJWadley/vanilla-extract/@vanilla-extract/compiler@c1d4a88",
+    "@vanilla-extract/css": "https://pkg.pr.new/RJWadley/vanilla-extract/@vanilla-extract/css@c1d4a88",
+    "@vanilla-extract/integration": "https://pkg.pr.new/RJWadley/vanilla-extract/@vanilla-extract/integration@c1d4a88",
+    "@vanilla-extract/next-plugin": "https://pkg.pr.new/RJWadley/vanilla-extract/@vanilla-extract/next-plugin@c1d4a88",
+    "@vanilla-extract/turbopack-plugin": "https://pkg.pr.new/RJWadley/vanilla-extract/@vanilla-extract/turbopack-plugin@c1d4a88",
+    "@vanilla-extract/webpack-plugin": "https://pkg.pr.new/RJWadley/vanilla-extract/@vanilla-extract/webpack-plugin@c1d4a88"
+  },
   "devDependencies": {
     "@atls/code-runtime": "2.1.16",
     "@nx-tools/container-metadata": "6.8.2",

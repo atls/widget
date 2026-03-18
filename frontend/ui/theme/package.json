@@ -5,12 +5,23 @@
   "type": "module",
   "exports": {
     ".": "./src/index.ts",
+    "./fonts": "./src/fonts/index.ts",
     "./theme-css": "./src/theme.css.ts"
   },
+  "scripts": {
+    "generate-theme": "generate-theme nHx3fiO1BYaBFUHbBwNa2I -o src/tokens --method secondary"
+  },
+  "dependencies": {
+    "effector": "23.4.2",
+    "effector-react": "23.3.0",
+    "next-themes": "0.4.6"
+  },
   "devDependencies": {
+    "@atls/figma-theme-cli": "2.0.13",
     "@types/react": "19.2.2",
     "@vanilla-extract/css": "1.17.4",
     "@vanilla-extract/dynamic": "2.1.5",
+    "next": "16.1.6",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
