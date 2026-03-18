@@ -12,7 +12,7 @@ import { changeTheme }             from './model.js'
 import { changeApplyTheme }        from './model.js'
 
 export const UseTheme = ({ forcedTheme }: ThemeProviderProps): null => {
-  const { theme, setTheme } = useTheme()
+  const { resolvedTheme, setTheme } = useTheme()
   const [activeTheme, setActiveTheme, setApplyTheme] = useUnit([
     $theme,
     changeTheme,
@@ -21,17 +21,18 @@ export const UseTheme = ({ forcedTheme }: ThemeProviderProps): null => {
 
   useEffect(() => {
     setApplyTheme(setTheme)
-  }, [])
+  }, [setApplyTheme, setTheme])
 
   useEffect(() => {
     if (forcedTheme && isThemeEnum(forcedTheme)) {
-      setActiveTheme(forcedTheme)
-    } else if (theme && isThemeEnum(theme) && theme !== activeTheme) {
-      setActiveTheme(theme)
-    } else {
-      setTheme(activeTheme)
+      if (forcedTheme !== activeTheme) setActiveTheme(forcedTheme)
+      return
     }
-  }, [forcedTheme, theme])
+
+    if (resolvedTheme && isThemeEnum(resolvedTheme) && resolvedTheme !== activeTheme) {
+      setActiveTheme(resolvedTheme)
+    }
+  }, [forcedTheme, resolvedTheme, activeTheme, setActiveTheme])
 
   return null
 }
