@@ -1,10 +1,6 @@
-import type { ReactNode } from 'react'
+import localFont from 'next/font/local'
 
-import localFont          from 'next/font/local'
-
-import { fontsVars }      from '../constants/index.js'
-
-const sfProDisplay = localFont({
+export const sfProDisplayFont = localFont({
   src: [
     {
       path: '../../assets/fonts/sf-pro-display/SF-Pro-Display-Regular.ttf',
@@ -18,12 +14,5 @@ const sfProDisplay = localFont({
     },
   ],
   display: 'swap',
+  variable: '--font-sf-pro-display',
 })
-
-export const SFProDisplay = (): ReactNode => (
-  <style>{`
-    :root {
-      ${fontsVars.sfProDisplay}: ${sfProDisplay.style.fontFamily};
-    }
-  `}</style>
-)
