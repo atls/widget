@@ -1,11 +1,15 @@
-import type { NextConfig } from 'next'
+import type { NextConfig }            from 'next'
 
-import { dirname }         from 'node:path'
-import { resolve }         from 'node:path'
-import { fileURLToPath }   from 'node:url'
+import { dirname }                    from 'node:path'
+import { resolve }                    from 'node:path'
+import { fileURLToPath }              from 'node:url'
+
+import { createVanillaExtractPlugin } from '@vanilla-extract/next-plugin'
 
 const rootDir = dirname(fileURLToPath(import.meta.url))
 const workspaceRoot = resolve(rootDir, '../../..')
+
+const withVanillaExtract = createVanillaExtractPlugin({ turbopackMode: 'on', identifiers: 'short' })
 
 const nextConfig: NextConfig = {
   turbopack: {
@@ -17,4 +21,4 @@ const nextConfig: NextConfig = {
   },
 }
 
-export default nextConfig
+export default withVanillaExtract(nextConfig)
