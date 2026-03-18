@@ -1,19 +1,16 @@
 import { globalStyle } from '@vanilla-extract/css'
 
-globalStyle('html, body, #__next', {
+globalStyle('html', {
   margin: 0,
   padding: 0,
   WebkitFontSmoothing: 'antialiased',
   WebkitOverflowScrolling: 'touch',
-  height: '100% !important',
-  scrollBehavior: 'smooth',
+  height: '100%',
 })
 
-globalStyle('html, body', {
+globalStyle('body', {
+  margin: 0,
+  padding: 0,
+  minHeight: '100%',
   overflowX: 'hidden',
-})
-
-globalStyle('#__next', {
-  display: 'flex',
-  flexDirection: 'column',
 })
