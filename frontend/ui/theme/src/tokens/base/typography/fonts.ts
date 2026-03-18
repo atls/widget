@@ -1,3 +1,5 @@
+import { fontsVars } from '../../../constants/index.js'
+
 export const fonts = {
-  primary: 'SF Pro Display',
+  primary: `var(${fontsVars.sfProDisplay})`,
 }
