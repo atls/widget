@@ -6,6 +6,7 @@ import { layoutThemeTokens }  from '../base/layout/index.js'
 export const darkColors = {
   ...colors.main,
   ...colors.primary,
+  ...colors.background,
   ...colors.accent,
   ...colors.contrast,
   ...colors.contrastInverted,
