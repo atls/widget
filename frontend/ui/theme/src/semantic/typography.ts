@@ -67,17 +67,35 @@ export const typography = {
     lineHeight: lineHeights.xl,
     fontWeight: fontWeights.regular,
   },
+  bodyLargeSemibold: {
+    fontFamily: fonts.primary,
+    fontSize: fontSizes.xl,
+    lineHeight: lineHeights.xl,
+    fontWeight: fontWeights.semibold,
+  },
   bodyMedium: {
     fontFamily: fonts.primary,
     fontSize: fontSizes.lg,
     lineHeight: lineHeights.lg,
     fontWeight: fontWeights.regular,
   },
+  bodyMediumSemibold: {
+    fontFamily: fonts.primary,
+    fontSize: fontSizes.lg,
+    lineHeight: lineHeights.lg,
+    fontWeight: fontWeights.semibold,
+  },
   bodySmall: {
     fontFamily: fonts.primary,
     fontSize: fontSizes.md,
     lineHeight: lineHeights.md,
     fontWeight: fontWeights.regular,
+  },
+  bodySmallSemibold: {
+    fontFamily: fonts.primary,
+    fontSize: fontSizes.md,
+    lineHeight: lineHeights.md,
+    fontWeight: fontWeights.semibold,
   },
 
   captionSmall: {
@@ -86,11 +104,23 @@ export const typography = {
     lineHeight: lineHeights.sm,
     fontWeight: fontWeights.regular,
   },
+  captionSmallSemibold: {
+    fontFamily: fonts.primary,
+    fontSize: fontSizes.sm,
+    lineHeight: lineHeights.sm,
+    fontWeight: fontWeights.semibold,
+  },
 
   labelSmall: {
     fontFamily: fonts.primary,
     fontSize: fontSizes.xs,
     lineHeight: lineHeights.xs,
     fontWeight: fontWeights.regular,
+  },
+  labelSmallSemibold: {
+    fontFamily: fonts.primary,
+    fontSize: fontSizes.xs,
+    lineHeight: lineHeights.xs,
+    fontWeight: fontWeights.semibold,
   },
 } as const
