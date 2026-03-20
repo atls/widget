@@ -12,6 +12,14 @@ export const primary = {
   'primary.heavy': 'rgba(153, 155, 249, 1)',
 }
 
+export const background = {
+  'background.main': 'rgba(255, 255, 255, 0.03)',
+  'background.hover': 'rgba(255, 255, 255, 0.01)',
+  'background.tooltip': 'rgba(0, 0, 0, 0.85)',
+  'background.border': 'rgba(255, 255, 255, 0.05)',
+  'background.border-hover': 'rgba(255, 255, 255, 0.25)',
+}
+
 export const accent = {
   'accent.info-light': 'rgba(143, 82, 204, 0.3)',
   'accent.info': 'rgba(199, 169, 230, 1)',
